@@ -9,7 +9,7 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
-import com.floms.floms.database.RestaurantDataOperations;
+import com.floms.floms.database.restaurant_operations.RestaurantDataOperations;
 import com.floms.floms.model.RestaurantData;
 
 @Service

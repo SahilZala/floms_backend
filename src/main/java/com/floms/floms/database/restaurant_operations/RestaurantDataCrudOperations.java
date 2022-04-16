@@ -1,4 +1,4 @@
-package com.floms.floms.database;
+package com.floms.floms.database.restaurant_operations;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.data.mongodb.repository.Query;

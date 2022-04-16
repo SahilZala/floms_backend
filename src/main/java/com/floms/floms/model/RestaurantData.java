@@ -55,11 +55,6 @@ public class RestaurantData {
 		this.mobileno = mobileno;
 	}
 
-
-
-
-
-
 	public String getEmailid() {
 		return emailid;
 	}

@@ -1,4 +1,4 @@
-package com.floms.floms.database;
+package com.floms.floms.database.restaurant_operations;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;

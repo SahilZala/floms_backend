@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -11,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.fasterxml.jackson.core.exc.StreamReadException;
 import com.fasterxml.jackson.databind.DatabindException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.floms.floms.database.RestaurantDataOperations;
+import com.floms.floms.database.restaurant_operations.RestaurantDataOperations;
 import com.floms.floms.helper.ControllersPath;
 import com.floms.floms.model.Response;
 import com.floms.floms.model.RestaurantData;
@@ -19,10 +20,10 @@ import com.floms.floms.myexception.DuplicateDataException;
 
 
 @RestController
+@CrossOrigin("*")
 public class RestaurantController {
 	@Autowired
 	RestaurantDataOperations restaurantDataOperations;
-	
 	
 //  ## create new restaurant. 
 	@RequestMapping(ControllersPath.CREATE_RESTAURANT_PROFILE_API_PATH)
