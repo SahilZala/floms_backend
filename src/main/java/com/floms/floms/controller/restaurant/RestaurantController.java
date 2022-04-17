@@ -18,7 +18,7 @@ import com.floms.floms.model.Response;
 import com.floms.floms.model.RestaurantData;
 import com.floms.floms.myexception.DuplicateDataException;
 
-
+	
 @RestController
 @CrossOrigin("*")
 public class RestaurantController {

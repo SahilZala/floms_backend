@@ -38,7 +38,7 @@ public class MySecurityConfig extends WebSecurityConfigurerAdapter{
 		.authorizeRequests()
 		.antMatchers(ControllersPath.GENERATE_RESTAURANT_TOKEN_API_PATH,
 					ControllersPath.CREATE_RESTAURANT_PROFILE_API_PATH,
-					ControllersPath.CREATE_LEFTOVER_FOOD_API_PATH)
+					ControllersPath.LOGIN_TO_RESTAURANT_API_PATH)
 		.permitAll()
 		.anyRequest()
 		.authenticated()
